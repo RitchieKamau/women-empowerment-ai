@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Credit Scoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI-Based Credit Scoring</h2>
+        <form id="creditForm">
+            <label for="income">Monthly Income (USD):</label>
+            <input type="number" id="income" required>
+
+            <label for="savings">Savings (USD):</label>
+            <input type="number" id="savings" required>
+
+            <label for="loanHistory">Loan History (Number of Loans Repaid):</label>
+            <input type="number" id="loanHistory" required>
+
+            <label for="businessRevenue">Business Revenue (USD):</label>
+            <input type="number" id="businessRevenue" required>
+
+            <label for="educationLevel">Education Level:</label>
+            <select id="educationLevel">
+                <option value="0">No Formal Education</option>
+                <option value="1">Basic Education</option>
+                <option value="2">Higher Education</option>
+            </select>
+
+            <button type="submit">Check Loan Status</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
